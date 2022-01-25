@@ -23,6 +23,7 @@
     "svelte-jester": "^1.0.3"
   },
   "dependencies": {
+    "@smui/button": "^6.0.0-beta.13",
     "sirv-cli": "^0.4.4"
   },
   "jest": {
@@ -35,6 +36,9 @@
       "^.+\\.js$": "babel-jest",
       "^.+\\.svelte$": "svelte-jester"
     },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@smui\/button)/)"
+    ],
     "verbose": true
   },
   "babel": {
